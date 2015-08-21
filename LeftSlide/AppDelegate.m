@@ -29,6 +29,13 @@
     self.LeftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.mainNavigationController];
     self.window.rootViewController = self.LeftSlideVC;
     
+    leftVC.leftSelectBlock = ^(id viewObject){
+        NSLog(@"%@",viewObject);
+        [self.mainNavigationController pushViewController:viewObject animated:YES];
+    };
+    
+    
+    
     [[UINavigationBar appearance] setBarTintColor:[UIColor purpleColor]];
     return YES;
 }
