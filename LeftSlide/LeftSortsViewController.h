@@ -10,5 +10,4 @@
 
 @interface LeftSortsViewController : UIViewController
 @property (nonatomic,strong) UITableView *tableview;
-@property (nonatomic, copy) void (^leftSelectBlock)(id viewObject);
 @end

@@ -80,11 +80,7 @@
     otherViewController *vc = [[otherViewController alloc] init];
     [tempAppDelegate.LeftSlideVC closeLeftView];//关闭左侧抽屉
     
-    if (self.leftSelectBlock)
-    {
-        self.leftSelectBlock(vc);
-    }
-//    [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
+    [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
